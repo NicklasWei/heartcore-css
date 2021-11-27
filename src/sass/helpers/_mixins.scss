@@ -3,7 +3,6 @@
 /// A variety of Sass mixins such as shorthands for CSS properties frequently used together.
 /// @author Nicklas Wei <wei.nicklas@gmail.com>
 
-
 // --- Box Model --- //  - - - - - - - - - - - - - - - - - - - - - |
 
 /// Shorthand for defining 'width' and 'height' in a single line.
@@ -22,8 +21,8 @@
 
 /// Shorthand for defining 'max-width' and 'max-height' in a single line.
 /// @group helpers/mixins
-/// @param { string } $max-width - Element's max-width
-/// @param { string } $max-height - Element's max-height
+/// @param { string } $max-width - Element's max width
+/// @param { string } $max-height - Element's max height
 /// @output 'max-width' and 'max-height'
 /// @example scss - Style '.el'
 ///   .el {
@@ -36,8 +35,8 @@
 
 /// Shorthand for defining 'min-width' and 'min-height' in a single line.
 /// @group helpers/mixins
-/// @param { string } $min-width - Element's min-width
-/// @param { string } $min-height - Element's min-height
+/// @param { string } $min-width - Element's min width
+/// @param { string } $min-height - Element's min height
 /// @output 'min-width' and 'min-height'
 /// @example scss - Style '.el'
 ///   .el {
@@ -78,8 +77,8 @@
 
 /// Shorthand for defining 'margin-left' and 'margin-right' in a single line.
 /// @group helpers/mixins
-/// @param { string } $margin-top - Element's left margin
-/// @param { string } $margin-bottom - Element's right margin
+/// @param { string } $margin-left - Element's left margin
+/// @param { string } $margin-right - Element's right margin
 /// @output 'margin-left' and 'margin-right'
 /// @example scss - Style '.el'
 ///   .el {
@@ -139,61 +138,61 @@
 /// Shorthand for defining 'border-top-width', and
 /// 'border-top-color' in a single line.
 /// @group helpers/mixins
-/// @param { string } $border-top-width - Element's border width
-/// @param { string } $border-top-color - Element's border color
+/// @param { string } $border-top-width - Element's top border width
+/// @param { string } $border-top-color - Element's top border color
 /// @output 'border-top-width' and 'border-top-color'
 /// @example scss - Style '.el'
 ///   .el {
 ///     @include border-top(5px, #FFFFFF)
 ///   }
-@mixin border-top($border-width, $border-color) {
-  border-top-width: $border-width;
-  border-top-color: $border-color;
+@mixin border-top($border-top-width, $border-top-color) {
+  border-top-width: $border-top-width;
+  border-top-color: $border-top-color;
 }
 
 /// Shorthand for defining 'border-right-width', and
 /// 'border-right-color' in a single line.
 /// @group helpers/mixins
-/// @param { string } $border-right-width - Element's border width
-/// @param { string } $border-right-color - Element's border color
+/// @param { string } $border-right-width - Element's right border width
+/// @param { string } $border-right-color - Element's right border color
 /// @output 'border-right-width' and 'border-right-color'
 /// @example scss - Style '.el'
 ///   .el {
 ///     @include border-right(8px, blue)
 ///   }
-@mixin border-right($border-width, $border-color) {
-  border-right-width: $border-width;
-  border-right-color: $border-color;
+@mixin border-right($border-right-width, $border-right-color) {
+  border-right-width: $border-right-width;
+  border-right-color: $border-right-color;
 }
 
 /// Shorthand for defining 'border-bottom-width', and
 /// 'border-bottom-color' in a single line.
 /// @group helpers/mixins
-/// @param { string } $border-bottom-width - Element's border width
-/// @param { string } $border-bottom-color - Element's border color
+/// @param { string } $border-bottom-width - Element's bottom border width
+/// @param { string } $border-bottom-color - Element's bottom border color
 /// @output 'border-bottom-width' and 'border-bottom-color'
 /// @example scss - Style '.el'
 ///   .el {
 ///     @include border-bottom(8px, blue)
 ///   }
-@mixin border-bottom($border-width, $border-color) {
-  border-bottom-width: $border-width;
-  border-bottom-color: $border-color;
+@mixin border-bottom($border-bottom-width, $border-bottom-color) {
+  border-bottom-width: $border-bottom-width;
+  border-bottom-color: $border-bottom-color;
 }
 
-/// Shorthand for defining 'border-right-width', and
-/// 'border-right-color' in a single line.
+/// Shorthand for defining 'border-left-width', and
+/// 'border-left-color' in a single line.
 /// @group helpers/mixins
-/// @param { string } $border-left-width - Element's border width
-/// @param { string } $border-left-color - Element's border color
+/// @param { string } $border-left-width - Element's left border width
+/// @param { string } $border-left-color - Element's left border color
 /// @output 'border-left-width' and 'border-left-color'
 /// @example scss - Style '.el'
 ///   .el {
-///     @include border-right(8px, blue)
+///     @include border-left(8px, blue)
 ///   }
-@mixin border-left($border-width, $border-color) {
-  border-left-width: $border-width;
-  border-left-color: $border-color;
+@mixin border-left($border-left-width, $border-left-color) {
+  border-left-width: $border-left-width;
+  border-left-color: $border-left-color;
 }
 
 // --- Typography --- // - - - - - - - - - - - - - - - - - - - - - - |
