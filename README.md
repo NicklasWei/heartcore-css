@@ -1,2 +1,2 @@
 # heartcore-css
-Personal Sass Library
+Personal Sass Library of helpers for efficient production of custom styles.

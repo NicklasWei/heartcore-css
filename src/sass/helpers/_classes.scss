@@ -1,0 +1,19 @@
+// --- CLASSES --- // - - - - - - - - - - - - - - - - - - - - - - - - |
+
+/// Multi-property classes for use with Sass @extend or with HTML class attributes.
+/// @author Nicklas Wei <wei.nicklas@gmail.com>
+
+// --- Positioning --- // - - - - - - - - - - - - - - - - - - - - - - - |
+
+/// Class for vertically and horizontally aligning
+/// the element's children using flexbox.
+/// @group helpers/classes
+/// @example scss - Style '.el'
+///   .el {
+///     @extend .flex-center;
+///   }
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
